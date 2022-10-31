@@ -112,9 +112,5 @@ function criarZumbis1() {
    
     zombie.lifetime = 400
     zombies.add(zombie)
-}
-}
-
-function criarBalas() {
-  
+  }
 }
