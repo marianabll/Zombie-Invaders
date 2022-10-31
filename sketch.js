@@ -1,4 +1,4 @@
-var bg;
+var bg, cover;
 var edges;
 var player, playerImg, player_shooting;
 var fence, fenceImg
@@ -10,7 +10,7 @@ var shootingSound, zombieMusic;
 var gameState = 0;
 
 function preload(){
-  capa = loadImage("./assets/capa.png")
+  cover = loadImage("./assets/capa.png")
   bg = loadImage("./assets/bg.png")
   fenceImg = loadImage("./assets/fence.png")
   player_shooting = loadImage("./assets/player_shooting.png")
@@ -43,7 +43,7 @@ function setup() {
 function draw() {
 
   if (gameState === 0) {
-    background(capa);
+    background(cover);
     zombieMusic.setVolume(0.05);
     zombieMusic.play();
     fence.visible = false;
